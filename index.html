@@ -14,33 +14,38 @@
             <h1>Antonio Schiavone</h1>
         </div>
         <div>
-            <a class="social-link" href="https://github.com/SchiavoAnto">
-                <img src="icons/github.svg" alt="Github logo">
-            </a>
-            <a class="social-link" href="https://twitter.com/schiavoanto">
-                <img src="icons/twitter.svg" alt="Twitter logo">
-            </a>
-            <a class="social-link" href="https://instagram.com/schiavoanto">
-                <img src="icons/instagram.svg" alt="Instagram logo">
-            </a>
-            <a class="social-link" href="https://linkedin.com/in/schiavoanto">
-                <img src="icons/linkedin.svg" alt="LinkedIn logo">
-            </a>
-            <a class="social-link" href="mailto:schiavoantodev@gmail.com">
-                <img src="icons/email.svg" alt="E-Mail icon">
-            </a>
+            <div class="social-link github-link">
+                <div class="social-link-hover"></div>
+                <a href="https://github.com/SchiavoAnto" title="GitHub"></a>
+            </div>
+            <div class="social-link twitter-link">
+                <div class="social-link-hover"></div>
+                <a href="https://twitter.com/schiavoanto" title="Twitter"></a>
+            </div>
+            <div class="social-link instagram-link">
+                <div class="social-link-hover"></div>
+                <a href="https://instagram.com/schiavoanto" title="Instagram"></a>
+            </div>
+            <div class="social-link linkedin-link">
+                <div class="social-link-hover"></div>
+                <a href="https://linkedin.com/in/schiavoanto" title="LinkedIn"></a>
+            </div>
+            <div class="social-link email-link">
+                <div class="social-link-hover"></div>
+                <a href="mailto:schiavoantodev@gmail.com" title="E-Mail"></a>
+            </div>
         </div>
     </nav>
     <main>
-        <p>Ciao! Mi chiamo Antonio Schiavone, ho 19 anni e sono un Perito Informatico diplomato all'I.I.S. F. Corni di Modena.<br>
-        Attualmente sono in cerca della mia prima esperienza lavorativa.</p>
-        <p>Ecco i principali progetti che ho creato nel corso degli anni:</p>
+        <p>Ciao! Mi chiamo Antonio Schiavone, ho <span id="age-span" title="7/10/2004">?</span> anni e sono un Perito Informatico diplomato all'I.I.S. F. Corni di Modena.<br>
+        Attualmente sono alla ricerca della mia prima esperienza lavorativa.</p>
+        <h2>Progetti principali</h2>
         <div id="projects-grid">
             <div class="project-card">
                 <p>HOMP: Highly Optimized Music Player</p>
                 <p>Creato per necessità di controllare la musica senza tasti multimediali della tastiera.<br>
                     La feature principale è il supporto a scorciatoie da tastiera personalizzabili. Creato con C# e WPF per Windows.
-                    Si può trovare su Github <a href="https://github.com/SchiavoAnto/homp-ultimate/tree/restructure">qui</a>.
+                    Si può trovare su GitHub <a href="https://github.com/SchiavoAnto/homp-ultimate/tree/restructure">qui</a>.
                 </p>
                 <img src="images/homp.png" alt="Immagine di HOMP" onclick="zoomImage('images/homp.png')">
             </div>
@@ -56,7 +61,7 @@
                 <p>HOWS: Highly Optimized Web Server</p>
                 <p>Semplice server web, ispirato da XAMPP e Apache HTTP Server, configurabile facilmente con JSON.<br>
                     Ancora in pieno sviluppo, ma ha già delle feature carine come pagine 404 personalizzabili ed elenco dei contenuti delle directory.<br>
-                    Come si nota segue la stessa denominazione di HOMP ed è disponibile su <a href="https://github.com/SchiavoAnto/hows">Github</a>.</p>
+                    Come si nota segue la stessa denominazione di HOMP ed è disponibile su <a href="https://github.com/SchiavoAnto/hows">GitHub</a>.</p>
             </div>
             <div class="project-card">
                 <p>High!Иess</p>
@@ -65,32 +70,84 @@
                 <img src="images/highness.png" alt="Immagine di HighNess" onclick="zoomImage('images/highness.png')">
             </div>
         </div>
+        <h2>Altri progetti (più piccoli)</h2>
         <div>
-            <p>e altri...</p>
-            <ul id="more-projects-list">
-                <li><b>Custom Notepad</b>: piccolo blocco note per rimpiazzare il blocco note di Windows</li>
-                <li><b>code-area</b>: script JS per aggiungere editor/blocchi di codice con syntax highlighting</li>
-            </ul>
-            <p>oltre alla marea di progetti non conclusi, con lo scopo di imparare un concetto o linguaggio.</p>
-            <p>Inoltre, mi piace sempre imparare nuovi linguaggi e tecnologie.<br>
-                I linguaggi con cui ho più familiarità sono C#, Java, PHP e JavaScript.<br>
-                So anche le basi di Python, C/C++, Rust e Swift.<br>
-                Voglio imparare TypeScript, Kotlin, Elixir, OCaml, Go, Zig e Odin.<br>
-                Mi ispirano anche Ruby, Objective-C, V e Lua.<br>
-                Il mio primo linguaggio è stato VB.Net.</p>
+            <div class="more-projects-list">
+                <div class="small-project-card">
+                    <p>HOTE: Highly Optimized Text Editor</p>
+                    <p class="description-text">Editor di testo cross-platform scritto in C#, usando la libreria SFML.Net per il rendering dell'intero programma.
+                        Repository GitHub ancora privata.</p>
+                </div>
+                <div class="small-project-card">
+                    <p>code-area</p>
+                    <p class="description-text">Script JS per aggiungere editor/blocchi di codice con syntax highlighting.
+                        Creato a luglio 2023 per necessità, ora è essenzialmente abbandonato.</p>
+                </div>
+                <div class="small-project-card">
+                    <p>Custom Notepad</p>
+                    <p class="description-text">Semplice blocco note per sostituire "Blocco Note" di Windows.
+                        Principalmente creato per avere un blocco note con tema scuro.</p>
+                </div>
+            </div>
+            <p>... e tanti altri progettini creati con lo scopo di apprendere un concetto o per imparare un linguaggio.</p>
+            <p>Ho anche
+                <a href="https://github.com/ppy/osu/pulls?q=is%3Apr+is%3Amerged+author%3Aschiavoanto">contribuito</a>
+                al popolare gioco di ritmo <a href="https://osu.ppy.sh">osu!</a>.</p>
         </div>
+        <h2>Linguaggi e tecnologie</h2>
         <div>
-            <p>I miei editor di testo principali sono Visual Studio (per C#, WPF e WinForms) e Visual Studio Code.<br>
-                In passato ho provato anche Emacs, NeoVim e Zed.<br>
-                Di recente, ho iniziato a provare Helix.<br>
-                Il mio obiettivo è quello di creare un editor per Windows e macOS.
-            </p>
+            <p>Conosco diversi linguaggi e tecnologie, qui raggruppati in base alle mie competenze:</p>
+            <div class="skills-cards">
+                <div class="skills-card">
+                    <span class="skill-tag skill-tag-green">Avanzate</span>
+                    <div>
+                        <p>Linguaggi: C#, Java, PHP, HTML+CSS</p>
+                        <p>Tecnologie: .NET, .NET Framework</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <span class="skill-tag skill-tag-orange">Intermedie</span>
+                    <div>
+                        <p>Linguaggi: JavaScript</p>
+                        <p>Tecnologie: Git, JavaFX, Java Swing, MySQL</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <span class="skill-tag skill-tag-red">Base</span>
+                    <div>
+                        <p>Linguaggi: VB.Net, Python, C, C++</p>
+                        <p>Tecnologie: Node.js, npm</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <span class="skill-tag skill-tag-white">Minime</span>
+                    <div>
+                        <p>Linguaggi: Rust, Swift, Go, Zig</p>
+                        <p>Tecnologie: React</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <span class="skill-tag skill-tag-blue">In Prova</span>
+                    <div>
+                        <p>Linguaggi: TypeScript</p>
+                        <p>Tecnologie: Svelte, SvelteKit, SwiftUI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Software che uso/ho usato</h2>
+        <div>
+            <h3>Editor di testo</h3>
+            <p>Uso attivamente Visual Studio per sviluppo C#, WPF e WinForms; Visual Studio Code e Zed (su macOS) per tutto il resto.<br>
+                In passato ho provato anche Emacs (che voglio riprovare in futuro), NeoVim e Helix.</p>
+            <h3>Altri software</h3>
+            <p>Ho esperienza con Blender (software 3D), Audacity (editing audio), Figma (design 2D) e Unity (game engine).<br>
+                Uso attivamente GitHub Desktop per gestire repository Git locali e remote.</p>
         </div>
     </main>
-    <footer></footer>
     <dialog id="zoom-dialog">
         <img id="zoom-dialog-image">
-        <button id="zoom-dialog-close-button" onclick="closeDialog()"></button>
+        <button id="zoom-dialog-close-button" title="Close" onclick="closeDialog()"></button>
     </dialog>
 </body>
 </html>
