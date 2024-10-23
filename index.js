@@ -34,6 +34,10 @@ function ageSpanClick() {
     const dst = ageSpan.getAttribute("data-show-tooltip");
     if (dst === null) return;
     ageSpan.setAttribute("data-show-tooltip", dst === "false" ? "true" : "false");
+    repositionAgeSpanTooltip();
+}
+
+function repositionAgeSpanTooltip() {
     const ageSpanAfter = getComputedStyle(ageSpan, ":after");
     const rect = ageSpan.getBoundingClientRect();
 
@@ -55,4 +59,8 @@ window.onload = () => {
     ageSpan = document.getElementById("age-span");
     ageSpan.innerText = (new Date(Date.now() - new Date(2004, 9, 7, 0, 0, 0, 0)).getUTCFullYear() - 1970);
     ageSpan.addEventListener("click", ageSpanClick);
+
+    window.addEventListener("resize", () => {
+        repositionAgeSpanTooltip();
+    });
 };
