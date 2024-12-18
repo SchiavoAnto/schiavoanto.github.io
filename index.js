@@ -1,5 +1,4 @@
 let zoomDialog;
-let zoomDialogRect;
 let zoomDialogImage;
 /**
  * @type {HTMLSpanElement}
@@ -24,6 +23,7 @@ function closeDialog() {
  * @param {PointerEvent} event 
  */
 function dialogClick(event) {
+    const zoomDialogRect = zoomDialog.getBoundingClientRect();
     if ((event.x < zoomDialogRect.x || event.x > zoomDialogRect.x + zoomDialogRect.width) ||
         (event.y < zoomDialogRect.y || event.y > zoomDialogRect.y + zoomDialogRect.height)) {
         closeDialog();
@@ -51,7 +51,6 @@ function repositionAgeSpanTooltip() {
 
 window.onload = () => {
     zoomDialog = document.getElementById("zoom-dialog");
-    zoomDialogRect = zoomDialog.getBoundingClientRect();
     zoomDialogImage = document.getElementById("zoom-dialog-image");
 
     zoomDialog.addEventListener("click", dialogClick);
