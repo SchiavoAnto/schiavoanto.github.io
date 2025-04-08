@@ -157,18 +157,18 @@ a {
         contrast(90%);
 }
 
-.twitter-link > a {
-    background-image: url("icons/twitter.svg");
+.mastodon-link > a {
+    background-image: url("icons/mastodon.svg");
 }
 
-.twitter-link:hover > a,
-.twitter-link:active > a {
-    filter: invert(54%)
-        sepia(69%)
-        saturate(2639%)
-        hue-rotate(178deg)
-        brightness(98%)
-        contrast(92%);
+.mastodon-link:hover > a,
+.mastodon-link:active > a {
+    filter: invert(44%)
+        sepia(46%)
+        saturate(7216%)
+        hue-rotate(228deg)
+        brightness(104%)
+        contrast(101%);
 }
 
 .bluesky-link > a {
