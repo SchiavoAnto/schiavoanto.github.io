@@ -185,20 +185,6 @@ a {
         contrast(108%);
 }
 
-.instagram-link > a {
-    background-image: url("icons/instagram.svg");
-}
-
-.instagram-link:hover > a,
-.instagram-link:active > a {
-    filter: invert(36%)
-        sepia(98%)
-        saturate(7492%)
-        hue-rotate(309deg)
-        brightness(95%)
-        contrast(113%);
-}
-
 .linkedin-link > a {
     background-image: url("icons/linkedin.svg");
 }
