@@ -171,20 +171,6 @@ a {
         contrast(101%);
 }
 
-.bluesky-link > a {
-    background-image: url("icons/bluesky.svg");
-}
-
-.bluesky-link:hover > a,
-.bluesky-link:active > a {
-    filter: invert(62%)
-        sepia(65%)
-        saturate(7072%)
-        hue-rotate(193deg)
-        brightness(97%)
-        contrast(108%);
-}
-
 .linkedin-link > a {
     background-image: url("icons/linkedin.svg");
 }
