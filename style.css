@@ -329,7 +329,7 @@ a {
     background-color: #191919;
     text-align: left;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
     box-shadow: 0px 0px 0.5rem 0.15rem #121212;
 }
 
@@ -360,6 +360,32 @@ a {
 
 .skill-tag-blue {
     background-color: #3636be;
+}
+
+#friends-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+
+    background-color: #191919;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0.5rem 0.15rem #121212;
+    padding: 0.5rem;
+}
+
+.friend-card > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 31px;
+}
+
+.friend-card > a > img {
+    display: block;
+    border-radius: 0.25rem;
 }
 
 #zoom-dialog {
