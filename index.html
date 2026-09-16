@@ -38,7 +38,7 @@
         <h2>Progetti principali</h2>
         <div id="projects-grid">
             <div class="project-card">
-                <p>HOMP: Highly Optimized Music Player</p>
+                <p class="project-card-title">HOMP: Highly Optimized Music Player</p>
                 <p>Creato per necessità di controllare la musica senza tasti multimediali della tastiera.<br>
                     La feature principale è il supporto a scorciatoie da tastiera personalizzabili. Creato con C# e WPF per Windows.
                     Si può trovare su GitHub <a href="https://github.com/SchiavoAnto/homp-ultimate/tree/restructure">qui</a>.
@@ -46,14 +46,25 @@
                 <img src="images/homp.png" alt="Immagine di HOMP" onclick="zoomImage('images/homp.png')">
             </div>
             <div class="project-card">
-                <p>Magnetic</p>
+                <p class="project-card-title">Magnetic</p>
                 <p>Libreria .NET scritta in C# per creare programmi desktop con GUI.<br>
                     Prende ispirazione principalmente da Windows Forms e WPF.<br>
                     I principali obiettivi sono l'essere cross-platform ed efficiente: quando l'utente non interagisce con i programmi che la usano, non deve usare risorse.<br>
                     È ancora in sviluppo e la repository Github è al momento privata.</p>
             </div>
             <div class="project-card">
-                <p>ClocSharp</p>
+                <div class="project-logo-container">
+                    <img src="images/booktracker_logo.png" alt="Logo di BookTracker" onclick="zoomImage('images/booktracker_logo.png')">
+                    <p class="project-card-title">BookTracker</p>
+                </div>
+                <p>Web App per tracciare libri letti e da comprare.<br>
+                    Creata con semplice HTML, CSS e JavaScript, permette di tenere traccia delle letture e informazioni dei libri.<br>
+                    I libri vengono automaticamente dotati di immagine di copertina semplicemente specificando l'ISBN (utilizzando l'API <a href="https://openlibrary.org/dev/docs/api/covers">OpenLibrary</a>), e talvolta la copertina non sia disponibile, si può caricare un'immagine dal dispositivo.<br>
+                    È utilizzabile anche offline ed è installabile come PWA.<br>
+                    Accessibile <a href="https://schiavoanto.github.io/BookTracker">qui</a>, repository <a href="https://github.com/SchiavoAnto/BookTracker">su Github</a>.</p>
+            </div>
+            <div class="project-card">
+                <p class="project-card-title">ClocSharp</p>
                 <p>Programma CLI per contare le righe di codice di un progetto scritto in C#.<br>
                     Conta il numero di file di cui contare le righe, e il conteggio è suddiviso per tipo di file.<br>
                     Supporta l'esclusione di cartelle specifiche dal conteggio, la personalizzazione del pattern dei file da processare e output verboso.<br>
@@ -61,7 +72,7 @@
                     Si può trovare su Github <a href="https://github.com/SchiavoAnto/ClocSharp">qui</a>.</p>
             </div>
             <div class="project-card">
-                <p>Leeze.js</p>
+                <p class="project-card-title">Leeze.js</p>
                 <p>Mini-libreria in JavaScript per creare pagine Web semplici ma con un minimo di reattività.<br>
                     Fa uso di attributi HTML custom per gestire i cambiamenti di stato.<br>
                     Non ha bisogno di step compilazione, transpilazione o bundling, è un semplice script da aggiungere alle pagine HTML.<br>
@@ -69,7 +80,7 @@
                 <img src="images/leezejs_logo_large.svg" alt="Logo di Leeze.js" onclick="zoomImage('images/leezejs_logo_large.svg')">
             </div>
             <div class="project-card">
-                <p>High!Иess</p>
+                <p class="project-card-title">High!Иess</p>
                 <p>Videogame multiplayer basato su Unity e C#. In sviluppo con <a href="https://about.malbyx.eu">Alberto</a> e Nicolò, è attualmente in pausa.
                     I 40 giocatori si trovano in un labirinto, con punti di spawn casuali, e devono riuscire a prendere un cristallo che si trova al centro del labirinto e uscirne.</p>
                 <img src="images/highness.png" alt="Immagine di HighNess" onclick="zoomImage('images/highness.png')">

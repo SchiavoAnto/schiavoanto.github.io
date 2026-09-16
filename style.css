@@ -266,7 +266,7 @@ a {
     box-shadow: 0px 0px 0.5rem 0.15rem #121212;
 }
 
-.project-card > img {
+.project-card img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
@@ -276,15 +276,26 @@ a {
     transition: outline 0.1s ease-out;
 }
 
-.project-card > img:hover,
-.project-card > img:active {
+.project-card img:hover,
+.project-card img:active {
     outline: 2px solid whitesmoke;
 }
 
-.project-card > *:first-child {
+.project-card-title {
     margin-top: 0;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.project-logo-container {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-logo-container > .project-card-title {
+    margin: 0;
 }
 
 .small-project-card {
